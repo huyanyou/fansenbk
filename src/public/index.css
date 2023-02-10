@@ -1,0 +1,7 @@
+/* :root{
+    --all-border-radio:16px;
+    --border-radius-medium:16px !important;
+}
+.all-border-radio{
+    border-radius: var(--border-radius-medium);
+} */

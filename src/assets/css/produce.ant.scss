@@ -1,0 +1,41 @@
+.homeLeft-enter-from,
+.homeLeft-enter-from .desc {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.homeLeft-enter-active,
+.homeLeft-enter-active .desc {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.homeLeft-enter-active .desc {
+  transition-delay: 0.02s;
+}
+.homeLeft-enter-to,
+.homeLeft-enter-to .desc {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.homeRight-enter-from,
+.homeRight-enter-from .desc {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.homeRight-enter-active,
+.homeRight-enter-active .desc {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+
+.homeRight-enter-active .desc {
+  transition-delay: 0.02s;
+}
+.homeRight-enter-to,
+.homeRight-enter-to .desc {
+  opacity: 1;
+  transform: translateX(0);
+}

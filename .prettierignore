@@ -1,0 +1,8 @@
+# Ignore artifacts:
+.nuxt/
+.output/
+dist/
+fit-oa/
+node_modeles/
+.husty/
+.gitignore

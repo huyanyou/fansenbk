@@ -1,0 +1,49 @@
+.swipe-slide {
+  width: 100%;
+  height: 600px;
+  box-sizing: border-box;
+
+  .swipe-slide-panel {
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 0 0;
+    max-height: 340px;
+    white-space: nowrap;
+
+    .swipe-slide-card {
+      transition-duration: 0ms;
+      transform: translate3d(v-bind('swipeDistance + "px"'), 0, 0);
+      // overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      width: max-content;
+
+      .swipe-slide-box {
+        width: v-bind('swipeWidth + "px"');
+        height: v-bind('swipeHeight + "px"');
+        background-color: red;
+        display: inline-block;
+        // 字符串拼接
+        margin-right: v-bind('swipeMarginRight + "px"');
+        white-space: normal;
+        vertical-align: top;
+      }
+
+      .swipe-slide-box-first {
+        transform: translateX(0);
+      }
+
+      .swipe-slide-box-prev {
+        transform: translateX(-4640px);
+      }
+
+      .swipe-slide-box-first {
+        transform: translateX(-4640px);
+      }
+
+      .swipe-slide-box-second {
+        transform: translateX(-4640px);
+      }
+    }
+  }
+}
